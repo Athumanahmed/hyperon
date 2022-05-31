@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial Helvetica, sans-serif;
+}
+
+#logo {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 900px;
+}
+
+.py {
+  padding: 2rem;
+}
+nav {
+  background-color: rgb(82, 77, 77);
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+ul li a {
+  text-decoration: none;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+  transition: padding;
+  font-weight: 550;
+}
+
+a:hover {
+  border-radius: 15px;
+  background-color: #000;
+  color: #fff;
+  transition: 1s ease-out;
+}
+
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#shirts,
+#T-shirts,
+#trouser {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#home img,
+#shirts img,
+#T-shirts img,
+#trouser img {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+
+#footer {
+  background-color: rgb(245, 242, 237);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .socialmedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a i {
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* media queries...... */
+
+/* smartphones */
+@media (max-width: 500px) {
+  #home,
+  #shirts,
+  #T-shirts,
+  #trouser {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home img,
+  #shirts img,
+  #T-shirts img,
+  #trouser img {
+    width: 100%;
+    height: fit-content;
+  }
+}
+/* end of smartphones */
+/* end of media queries...... */
